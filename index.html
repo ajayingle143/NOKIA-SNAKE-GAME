@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nokia Snake</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="phone">
+    <div class="lcd">
+      <div class="hud">
+        <div>Score: <span id="score">0</span></div>
+        <div>High: <span id="high">0</span></div>
+        <div>Speed: <span id="spd">1</span>x</div>
+      </div>
+      <canvas id="game" width="336" height="336" aria-label="Nokia Snake game canvas"></canvas>
+    </div>
+    <div class="controls">
+      <button class="control" id="pauseBtn">⏸️ / ▶️ Pause</button>
+      <button class="control" id="restartBtn">⟳ Restart</button>
+      <button class="control" id="slowerBtn">− Speed</button>
+      <button class="control" id="fasterBtn">+ Speed</button>
+    </div>
+    <div class="btns" aria-hidden="false" aria-label="On-screen D-Pad">
+      <div class="pad blank"></div>
+      <div class="pad" id="up"><span>▲</span></div>
+      <div class="pad blank"></div>
+      <div class="pad" id="left"><span>◀</span></div>
+      <div class="pad" id="center"><span>●</span></div>
+      <div class="pad" id="right"><span>▶</span></div>
+      <div class="pad blank"></div>
+      <div class="pad" id="down"><span>▼</span></div>
+      <div class="pad blank"></div>
+    </div>
+    <div class="legend">Use ↑ ↓ ← → or WASD. Space = Pause, Enter = Restart.</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
